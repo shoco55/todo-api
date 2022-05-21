@@ -4,7 +4,7 @@ const cors = require('cors');
 
 router.use(
   cors({
-    origin: ['http://localhost:3001', process.env.PUBLIC_HOST],
+    origin: process.env.PUBLIC_HOST,
     credentials: true,
     optionsSuccessStatus: 200,
   })
